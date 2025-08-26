@@ -13,3 +13,25 @@ html{
     color: black;
 }
 
+@theme {
+    --animate-marquee-x: marquee-x 80s linear infinite;
+    --animate-marquee-x-reverse: marquee-x-reverse 80s linear infinite;
+  
+    @keyframes marquee-x {
+      0% {
+        transform: translateX(0%);
+      }
+      100% {
+        transform: translateX(-50%);
+      }
+    }
+  
+    @keyframes marquee-x-reverse {
+      0% {
+        transform: translateX(-50%);
+      }
+      100% {
+        transform: translateX(0%);
+      }
+    }
+  }

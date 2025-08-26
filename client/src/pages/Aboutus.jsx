@@ -93,47 +93,92 @@ const Aboutus = () => {
           </div>
 
           {/* Right: Contact formData */}
-            <form  action="https://formspree.io/f/xeozbbvo" method="POST" className="flex flex-col gap-4 bg-gray-900 p-6  shadow-lg" 
-            >
+           <form
+  action="https://formspree.io/f/xeozbbvo"
+  method="POST"
+  className="
+    relative flex flex-col gap-4
+    rounded-2xl p-6
+    bg-white/10
+    backdrop-blur-md backdrop-saturate-150
+    border border-white/20
+    ring-1 ring-white/10
+    shadow-2xl
+  "
+>
+  {/* subtle noise / highlight */}
+  <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-60  bg-gradient-to-br from-slate-900 via-indigo-950 to-black" />
 
-            {/* Name */}
-            <input
-              type="text"
-              placeholder="Your Name"
-              name='name'
-              value={formData.name}
-              onChange={handleChange}
-              className="p-3  bg-black border border-gray-700 focus:border-white focus:outline-none"
-            />
-            
-            {/* Email */}
-            <input
-              type="email"
-              placeholder="Your Email"
-              name='email'
-              value={formData.email}
-              onChange={handleChange}
-              className="p-3  bg-black border border-gray-700 focus:border-white focus:outline-none"
-            />
-            
-            {/* Message */}
-            <textarea
-              rows="4"
-              placeholder="Your Message"
-              name='message'
-              value={formData.message}
-              onChange={handleChange}
-              className="p-3  bg-black border border-gray-700 focus:border-white focus:outline-none"
-            ></textarea>
+  {/* Name */}
+  <input
+    type="text"
+    placeholder="Your Name"
+    name="name"
+    value={formData.name}
+    onChange={handleChange}
+    className="
+      p-3 rounded-lg
+      text-white placeholder-white/70
+      bg-white/5 hover:bg-white/10
+      border border-white/20
+      focus:(outline-none ring-2 ring-white/30 bg-white/10)
+      transition
+    "
+  />
 
-            {/* Submit Button */}
-            <button
-              type="submit"
-              className="bg-black text-white font-extrabold  py-3  hover:bg-white hover:text-black transition"
-            >
-              Send Message
-            </button>
-          </form>
+  {/* Email */}
+  <input
+    type="email"
+    placeholder="Your Email"
+    name="email"
+    value={formData.email}
+    onChange={handleChange}
+    className="
+      p-3 rounded-lg
+      text-white placeholder-white/70
+      bg-white/5 hover:bg-white/10
+      border border-white/20
+      focus:(outline-none ring-2 ring-white/30 bg-white/10)
+      transition
+    "
+  />
+
+  {/* Message */}
+  <textarea
+    rows="4"
+    placeholder="Your Message"
+    name="message"
+    value={formData.message}
+    onChange={handleChange}
+    className="
+      p-3 rounded-lg
+      text-white placeholder-white/70
+      bg-white/5 hover:bg-white/10
+      border border-white/20
+      focus:(outline-none ring-2 ring-white/30 bg-white/10)
+      transition
+      resize-y
+    "
+  />
+
+  {/* Submit Button */}
+  <button
+    type="submit"
+    className="
+      rounded-lg py-3 font-extrabold
+      text-white
+      bg-white/20 hover:bg-white/30
+      border border-white/20
+      focus:outline-none focus:ring-2 focus:ring-white/40
+      transition
+      shadow-lg
+      backdrop-blur
+    "
+  >
+    Send Message
+  </button>
+</form>
+
           
           
         </div>

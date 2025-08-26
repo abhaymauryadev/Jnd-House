@@ -15,9 +15,9 @@ const Footer = () => {
         <a href="https://www.instagram.com/jndhouse/"  target="_blank" rel="noopener noreferrer" className="w-20 h-20 flex items-center justify-center border border-white bg-white   ">
          <FaInstagram   size={32} fill=""  />
         </a>
-        <a href="#" target="_blank"  rel="noopener noreferrer" className="w-20 h-20 flex items-center justify-center border bg-white  border-white">
+        {/* <a href="#" target="_blank"  rel="noopener noreferrer" className="w-20 h-20 flex items-center justify-center border bg-white  border-white">
         <SlSocialFacebook size={32} fill=""/>
-        </a>
+        </a> */}
       </div>
 
       {/* <!-- Locations --> */}

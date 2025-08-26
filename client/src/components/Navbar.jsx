@@ -64,7 +64,7 @@ const [isHovered, setIsHovered] = useState(false);
       </div>
 
       {/* Left: Logo */}
-      <div className="absolute top-[-20px] right-[150px] md:right-0 lg:flex lg:justify-center lg:items-center ">
+      <div className="absolute top-[-20px] right-[120px] md:right-0 lg:flex lg:justify-center lg:items-center ">
         <img
           src={logo}
           alt="Logo"

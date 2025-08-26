@@ -62,7 +62,7 @@ const Cursor = () => {
     <div
       ref={cursorRef}
       className="hidden md:block fixed top-0 left-0 w-4 h-4 rounded-full bg-white mix-blend-difference pointer-events-none z-50"
-    />
+    /> 
   );
 };
 

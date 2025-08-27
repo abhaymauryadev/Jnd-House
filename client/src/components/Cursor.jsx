@@ -38,7 +38,7 @@ const Cursor = () => {
 
     // Find all interactive elements like links, buttons, and elements with a pointer cursor
     const interactiveElements = document.querySelectorAll(
-      'a, button, img, logo [style*="cursor:pointer"]'
+      'a, button, img, logo, video [style*="cursor:pointer"]'
     );
 
     interactiveElements.forEach(el => {

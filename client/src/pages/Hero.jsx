@@ -16,9 +16,9 @@ const Hero = () => {
   });
 
   return (
-    <section id="home" className="max-w-9xl  m-auto bg-[#000000]">
-      <div className=" py-8  h-[700px] w-full ">
-        <div className="relative h-96 w-full border border-b-gray-400 overflow-y-visible sm:h-full ">
+    <section id="home" className="max-w-9xl  m-auto bg-[#000000] border border-b-gray-500 ">
+      <div className=" py-8  h-[560px] sm:h-[720px] w-full ">
+        <div className="relative h-96 w-full  overflow-y-visible  ">
           <video
             src="https://cdn.prod.website-files.com/6646fca7f3a331476d338754%2F66839eada0e10752e419afc8_Isaac_Tour-transcode.mp4"
             autoPlay
@@ -26,36 +26,36 @@ const Hero = () => {
             loop
             playsInline
             controls={false}
-            className="h-[500px] sm:h-full object-cover md:w-full"
+            className="h-[380px] lg:h-[700px] sm:h-full object-cover md:w-full absolute inset-y-0 left-0  z-20 bg-gradient-to-r from-black to-transparent "
           />
 
           <div
             ref={hero}
-            className="absolute top-[100px] xl:top-[200px] inset-0 flex flex-col items-start justify-start pl-10 sm:pl-14 gap-12 "
-          >
-            <h1 className="text-white text-2xl sm:text-[1.50rem] font-regular ml-2 font-inter">
+            className="z-20 absolute top-[120px] sm:top-[90px] xl:top-[200px] inset-0 flex flex-col items-start justify-start pl-6 sm:pl-9 lg:gap-12">
+          
+            <h1 className="font-inter  text-white text-xl sm:text-xl  lg:text-[17px]  ">
               Just Anncounced
             </h1>
 
-            <div className=" inset-0 flex -mt-3.2 items-center justify-start">
-              <h1 className="text-white uppercase font-black text-5xl md:text-7xl xl:text-8xl">
-                THE horizon
+            <div className=" inset-0 flex -mt-3 items-center lg:gap-12 justify-start">
+              <h1 className="text-white uppercase  text-5xl font-manuka md:text-7xl xl:text-[128px] font-black leading-[128px]">
+                ISAAC BUTTERFILED
               </h1>
             </div>
 
-            <div className="font-black inset-0 gap-5 sm:gap-15 mt-[300px] sm:mt-0 z-50 flex items-center flex-wrap-reverse  justify-start bg-black/50 w-full h-[50px] md:h-[100px]">
-              <button className=" md:text-2xl xl:text-5xl px-5 flex justify-center items-center bg-white h-full hover:border border-white hover:bg-black hover:text-white  transition-all duration-500 ease-in-out cursor-pointer">
+            <div className="  font-black  font-manuka inset-0 gap-5 sm:gap-15 mt-[200px] z-50 flex flex-wrap-reverse  items-center justify-start bg-black/55 w-full h-[50px]  lg:h-[111px] md:h-[100px] lg:font-[4.25rem] lg:-mt-[12px] ">
+              <button className="text-4xl sm:text-9xl  md:text-2xl xl:text-7xl px-5 flex justify-center items-center bg-white h-full lg:h-[110px] lg:w-[320px] hover:border border-white hover:bg-black hover:text-white  transition-all duration-500 ease-in-out cursor-pointer">
                 BOOK NOW
               </button>
-              <div className="flex text-[15px] items-center gap-9 sm:gap-15 md:gap-5">
-                <h1 className=" md:text-2xl text-white uppercase xl:text-5xl">
+              <div className="font-manuka flex text-[25px] items-center gap-10 sm:gap-15 md:gap-20">
+                <h1 className=" md:text-2xl text-white uppercase xl:text-[4.25rem]">
                   1 OCt 2025
                 </h1>
-                <h1 className="md:text-2xl text-white xl:text-5xl flex  justify-center items-center gap-4">
-                  <CircleArrowRight size={40} /> 30 OCT 2025
+                <h1 className="font-manuka  md:text-2xl text-white xl:text-[4.25rem] flex  justify-center items-center gap-4">
+                  <CircleArrowRight size={35}/> 30 OCT 2025
                 </h1>
-                <h1 className="md:text-2xl text-white xl:text-5xl flex  justify-center items-center gap-2">
-                  <MapPin size={30} /> MH/UP
+                <h1 className="font-manuka md:text-2xl text-white xl:text-[4.25rem] flex  justify-center items-center gap-2">
+                  <MapPin size={35} /> MH/UP
                 </h1>
               </div>
             </div>

@@ -1,4 +1,4 @@
-import { Calendar, ArrowRight, MapPin,Sparkles  } from 'lucide-react'
+import { Calendar, ArrowRight, MapPin  } from 'lucide-react'
 import React, { useRef } from 'react'
 import gsap from "gsap";
 import con from '../assets/nightcon.png'
@@ -28,38 +28,35 @@ const Event = () => {
   return (
     // Tours section
     <>
-    <section id='tour' ref={tour} className='max-w-9xl  m-auto'>
-        <div className='ml-11 mt-12  sm:ml-14 '>
-            <h1 className='text-white font-extrabold text-5xl  lg:text-8xl'>Events</h1>
+    <section id='tour' ref={tour} className='max-w-9xl'>
+        <div className='ml-4 mt-12  md:ml-10 '>
+            <h1 className='font-manuka text-white font-black text-9xl uppercase lg:text-9xl'>Events</h1>
         </div>
 
         {/* <div className='grid grid-cols-1 grid-rows-1 px-12 pr-8 pt-8 gap-6  sm:ml-2 sm:grid-cols-2 lg:grid-cols-3 '> */}
 
-      <div className='md:flex sm:lex-col xl:flex justify-between items-center mt-12 mx-10 border border-gray-100 gap-2 '>
+      <div className='md:flex sm:lex-col xl:flex justify-between items-center mt-12 ml-3  gap-2 '>
           <div className=''>
               <img className='md:p-7 h-full w-[800px] object-cover' src={con} alt="COMING SOON" />
           </div>
 
 
-        <div className='text-white   sm:mx-auto xl:mx-auto text-center flex flex-col gap-12  h-[500px] xl:w-[500px] border border-gray-100'>
-           <div className='font-inter ml-8 mt-3 text-4xl sm:text-5xl blur-sm'>
-            <h1>Isaac Butterfield</h1>
-        </div> 
-
-        <div className='font-inter text-center sm:pl-6 sm:text-3xl text-xl mt-2 '>
+        <div className='text-white mt-12  sm:mx-auto xl:mx-auto lg:mt-0 text-center flex flex-col gap-12  h-[500px] xl:w-[500px] border border-gray-100 bg-gradient-to-br from-slate-900 via-indigo-950 to-black'>
+            
+        <div className='font-manuka -ml-20 text-center sm:pl-6 sm:text-5xl text-6xl mt-5 '>
            Pineapple Express
         </div>
 
-         <div className=' flex  items-center sm:pl-23   sm:text-3xl  font-inter ml-9 text-xl mt-2 gap-3'>
+         <div className=' flex  items-center ml-5 pl-6  sm:pl-20 sm:text-xl  font-inter  text-2xl mt-2 gap-3'>
          <MapPin/> LowerParel/Mumbai
         </div>
 
-        <div className='flex items-center text-center  sm:pl-20 pl-10  font-inter  sm:text-3xl  sm:ml-12 text-[19px]   gap-1 md:gap-3 '>
+        <div className='flex items-center text-center text-2xl ml-2 sm:pl-15 pl-2  font-inter  sm:text-xl  sm:ml-12 text-[20px]   gap-1 md:gap-3 '>
           <Calendar /> Gates Open<ArrowRight/> 8:00PM
         </div>
 
-         <div className='flex  items-center mx-auto lg:mb-12 '>
-        <button className='font-Anton font-extrabold text-3xl lg:h-20 lg:w-70 mb-8 h-20 w-60  border border-white bg-black hover:border  hover:bg-white hover:text-black mt-[1.5rem] ml-auto transition-all duration-500 ease-in-out cursor-pointer'>
+         <div className='flex font-inter items-center mx-auto mt-[70px] '>
+        <button className='font-Anton font-extrabold text-3xl lg:h-20 lg:w-70 mb-8 h-20 w-60  border border-white  hover:border  hover:bg-white hover:text-black mt-[1.5rem] ml-auto transition-all duration-500 ease-in-out cursor-pointer'>
         PRE BOOK
        </button>
         </div>

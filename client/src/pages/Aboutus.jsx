@@ -45,7 +45,7 @@ const Aboutus = () => {
       <section className="px-6 py-12 md:px-12 lg:px-24 border-b border-gray-800">
         <div className="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 sm:gap-[400px] items-center">
           {/* Image */}
-          <div className="flex justify-center">
+          <div className="flex justify-start -ml-12">
             <img
               src="https://cdn.prod.website-files.com/664aff04588e94bdb284d60f/66a095ab732689a16527864b_Rabbit%20Approved%20Photo%201.JPG%20(1)-p-800.jpg"
               alt="About Us"
@@ -55,12 +55,12 @@ const Aboutus = () => {
 
           {/* Story */}
           <div>
-            <h2 className="text-5xl lg:text-8xl font-extrabold mb-6">About Us</h2>
-            <p className="text-lg leading-relaxed mb-4">
+            <h2 className=" font-manuka text-9xl lg:text-9xl font-extrabold mb-6">About Us</h2>
+            <p className="font-inter text-lg leading-relaxed mb-4">
              JnD House Curating Culture. Creating Connections. 
 
             </p>
-            <p className="text-lg leading-relaxed">
+            <p className="font-inter  text-lg leading-relaxed">
               Mumbai’s curated canvas for culture, creativity, and connection. From electrifying concerts to inspiring talks and exclusive art showcases — we craft immersive experiences where sophistication meets bold innovation. Join us to witness the extraordinary unfold.
             </p>
           </div>
@@ -68,23 +68,23 @@ const Aboutus = () => {
       </section>
 
       {/* Contact Us Section */}
-      <section id='contact' className="px-6 py-12 md:px-12 lg:px-24">
+      <section id='contact' className="px-6 py-12 md:px-12 lg:px-">
         <div className="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 sm:gap-[400px] items-center ">
           {/* Left: Contact Info */}
           <div>
-            <h2 className="text-5xl lg:text-7xl font-extrabold mb-6">Contact Us</h2>
-            <p className="text-lg mb-4">
+            <h2 className="font-manuka text-9xl lg:text-9xl font-extrabold mb-6">Contact Us</h2>
+            <p className="text-lg mb-4 font-inter">
               Have a question, idea, or just want to say hi?  
               We’d love to hear from you.  
             </p>
-            <p className="text-lg mb-2 flex justify-start items-center">
+            <p className="text-lg mb-2 flex justify-start items-center font-inter">
               <Mail/> &nbsp; {" "}
               <a href="mailto:Speak@jndhouse.in" className="underline">
                 Speak@jndhouse.in
 
               </a>
             </p>
-            <p className="text-lg flex justify-start items-center">
+            <p className="text-lg flex justify-start items-center font-inter">
               <Phone/> &nbsp; {" "}
               <a href="tel:+917709468348" className="underline">
                 7709468348
@@ -98,7 +98,7 @@ const Aboutus = () => {
   method="POST"
   className="
     relative flex flex-col gap-4
-    rounded-2xl p-6
+    p-6
     bg-white/10
     backdrop-blur-md backdrop-saturate-150
     border border-white/20
@@ -107,7 +107,7 @@ const Aboutus = () => {
   "
 >
   {/* subtle noise / highlight */}
-  <div className="pointer-events-none absolute inset-0 rounded-2xl opacity-60  bg-gradient-to-br from-slate-900 via-indigo-950 to-black" />
+  <div className="pointer-events-none absolute inset-0  opacity-60  bg-gradient-to-br from-slate-900 via-indigo-950 to-black" />
 
   {/* Name */}
   <input

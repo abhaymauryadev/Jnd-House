@@ -8,24 +8,6 @@ export default defineConfig({
     tailwindcss(),
     react()
   ],
-    theme: {    
-    extend: {
-      keyframes: {
-        'marquee-x': {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(-100%)' },
-        },
-        'marquee-x-reverse': {
-          '0%': { transform: 'translateX(0)' },
-          '100%': { transform: 'translateX(100%)' },
-        },
-      },
-      animation: {
-        'marquee-x': 'marquee-x 18s linear infinite',
-        'marquee-x-reverse': 'marquee-x-reverse 18s linear infinite',
-      },
-    },
-  },
 })
 
 

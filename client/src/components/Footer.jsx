@@ -5,14 +5,14 @@ import { MoveUpRight } from "lucide-react";
 
 const Footer = () => {
   return  (
-  <footer className="bg-black text-white px-8 sm:px-25 sm:20 py-12 mt-16">
+  <footer className="bg-black text-white px-7 sm:px-10 sm:20 py-12 mt-16 ">
   <div className="grid grid-cols-1 md:grid-cols-2 gap-20">
 
     {/* <!-- Left Section --> */}
     <div className="space-y-10">
       {/* <!-- Social Icons --> */}
-      <div className="flex space-x-4">
-        <a href="https://www.instagram.com/jndhouse/"  target="_blank" rel="noopener noreferrer" className="w-20 h-20 flex items-center justify-center border border-white bg-white   ">
+      <div className="flex space-x-4 ">
+        <a href="https://www.instagram.com/jndhouse/"  target="_blank" rel="noopener noreferrer" className="w-20 h-20 ml-33 lg:ml-0 flex items-center justify-center border border-white bg-white ">
          <FaInstagram   size={32} fill=""  />
         </a>
         {/* <a href="#" target="_blank"  rel="noopener noreferrer" className="w-20 h-20 flex items-center justify-center border bg-white  border-white">
@@ -37,8 +37,8 @@ const Footer = () => {
     </div>
 {/* 
     <!-- Right Section --> */}
-  <div className="flex  justify-start items-center md:justify-center ">
-      <table className="table p-">
+  <div className="flex  justify-start  items-center md:justify-center ">
+      <table className="table ">
        <tbody>
        
 
@@ -47,7 +47,7 @@ const Footer = () => {
           <span className="transition-transform duration-300 group-hover:translate-x-1 text-left w-7"><MoveUpRight /></span>
           </a>
           </td>
-          <td className="h-14"> <a href="#home" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="">
+          <td className="h-14"> <a href="#home" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="text-2xl">
           HOME
         </a></td>
         </tr>
@@ -58,7 +58,7 @@ const Footer = () => {
           <span className="transition-transform duration-300 group-hover:translate-x-1 text-left w-7"><MoveUpRight /></span>
           </a>
           </td>
-          <td className="h-14"> <a href="#tour" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="">
+          <td className="h-14"> <a href="#tour" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="text-2xl">
           EVENT
         </a></td>
         </tr>
@@ -70,7 +70,7 @@ const Footer = () => {
           <span className="transition-transform duration-300 group-hover:translate-x-1 text-left w-7"><MoveUpRight /></span>
           </a>
           </td>
-          <td className="h-14"> <a href="#about" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="">
+          <td className="h-14"> <a href="#about" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="text-2xl">
           ABOUT
         </a></td>
         </tr>
@@ -80,7 +80,7 @@ const Footer = () => {
           <span className="transition-transform duration-300 group-hover:translate-x-1 text-left w-7"><MoveUpRight /></span>
           </a>
           </td>
-          <td className="h-14"> <a href="#contact" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="">
+          <td className="h-14"> <a href="#contact" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="text-2xl">
           CONTACT
         </a></td>
         </tr>

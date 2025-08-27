@@ -39,7 +39,7 @@ const Hero = () => {
 
             <div className=" inset-0 flex -mt-3 items-center lg:gap-12 justify-start">
               <h1 className="text-white uppercase  text-5xl font-manuka md:text-7xl xl:text-[128px] font-black leading-[128px]">
-                ISAAC BUTTERFILED
+                The Curated Canvas
               </h1>
             </div>
 
@@ -52,10 +52,10 @@ const Hero = () => {
                   1 OCt 2025
                 </h1>
                 <h1 className="font-manuka  md:text-2xl text-white xl:text-[4.25rem] flex  justify-center items-center gap-4">
-                  <CircleArrowRight size={35}/> 30 OCT 2025
+                  <CircleArrowRight size={60}/> 30 OCT 2025
                 </h1>
                 <h1 className="font-manuka md:text-2xl text-white xl:text-[4.25rem] flex  justify-center items-center gap-2">
-                  <MapPin size={35} /> MH/UP
+                  <MapPin size={60} /> MH/UP
                 </h1>
               </div>
             </div>

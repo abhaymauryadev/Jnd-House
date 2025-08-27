@@ -43,16 +43,16 @@ const Event = () => {
 
         <div className='text-white mt-12  sm:mx-auto xl:mx-auto lg:mt-0 text-center flex flex-col gap-12  h-[500px] xl:w-[500px] border border-gray-100 bg-gradient-to-br from-slate-900 via-indigo-950 to-black'>
             
-        <div className='font-manuka -ml-20 text-center sm:pl-6 sm:text-5xl text-6xl mt-5 '>
+        <div className='font-manuka  text-center sm:pl-6 sm:text-5xl text-6xl mt-5 '>
            Pineapple Express
         </div>
 
-         <div className=' flex  items-center ml-5 pl-6  sm:pl-20 sm:text-xl  font-inter  text-2xl mt-2 gap-3'>
+         <div className=' flex  items-center lg:ml-15 pl-10  sm:pl-20 sm:text-xl  font-inter  text-2xl mt-2 gap-3'>
          <MapPin/> LowerParel/Mumbai
         </div>
 
-        <div className='flex items-center text-center text-2xl ml-2 sm:pl-15 pl-2  font-inter  sm:text-xl  sm:ml-12 text-[20px]   gap-1 md:gap-3 '>
-          <Calendar /> Gates Open<ArrowRight/> 8:00PM
+        <div className='flex items-center text-center lg:ml-20 text-2xl ml-2 sm:pl-15 pl-10  font-inter  sm:text-xl  sm:ml-12 text-[20px] md:gap-3 '>
+          <Calendar />&nbsp;GatesOpen<ArrowRight/> 8:00PM
         </div>
 
          <div className='flex font-inter items-center mx-auto mt-[70px] '>
@@ -168,7 +168,7 @@ const Event = () => {
     <div className="animate-marquee-x py-4 text-center bg-black text-white border border-white-400 font-bold text-[clamp(1rem,2vw,2rem)] whitespace-nowrap select-none pointer-events-none inline-block will-change-transform">
       <div className="inline-flex items-center gap-8">
         {[...Array(30)].map((_, i) => (
-          <span key={i}>The Horizon Coming Soon ✨</span>
+          <span key={i}>The Curated Canvas✨</span>
         ))}
       </div>
     </div>
@@ -179,7 +179,7 @@ const Event = () => {
     <div className="animate-marquee-x-reverse py-4 text-center bg-white text-black font-bold text-[clamp(1rem,2vw,2rem)] whitespace-nowrap select-none pointer-events-none inline-block will-change-transform border border-black/20">
       <div className="inline-flex items-center gap-8">
         {[...Array(30)].map((_, i) => (
-          <span key={i}>The Horizon Coming Soon ✨</span>
+          <span key={i}>The Curated Canvas ✨</span>
         ))}
       </div>
     </div>

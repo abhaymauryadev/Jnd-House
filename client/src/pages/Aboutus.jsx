@@ -55,7 +55,7 @@ const Aboutus = () => {
 
           {/* Story */}
           <div>
-            <h2 className=" font-manuka text-9xl lg:text-9xl font-extrabold mb-6">About Us</h2>
+            <h2 className=" font-manuka text-7xl lg:text-9xl font-extrabold mb-6">About Us</h2>
             <p className="font-inter text-lg leading-relaxed mb-4">
              JnD House Curating Culture. Creating Connections. 
 
@@ -72,7 +72,7 @@ const Aboutus = () => {
         <div className="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 sm:gap-[400px] items-center ">
           {/* Left: Contact Info */}
           <div>
-            <h2 className="font-manuka text-9xl lg:text-9xl font-extrabold mb-6">Contact Us</h2>
+            <h2 className="font-manuka text-7xl lg:text-9xl font-extrabold mb-6">Contact Us</h2>
             <p className="text-lg mb-4 font-inter">
               Have a question, idea, or just want to say hi?  
               We’d love to hear from you.  

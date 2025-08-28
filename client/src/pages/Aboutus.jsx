@@ -18,26 +18,35 @@ const Aboutus = () => {
       setFormData((prev)=> ({...prev, [name]: value}));
     };
 
-    const handleSumbit = (e)=>{
-      e.preventDefault();
-      const name = e.target.name.value;
-      const email = e.target.email.value;
-      const message = e.target.message.value;
-      alert(` Message sent successfully 🚀 
-      ${name}, 
-      ${email}, 
-      ${message}`);
-      setFormData({
-        name:'',
-        email:'',
-        message:'',
-      }); 
-      setSubmitted(true);
-    }
+    const handleSubmit = (e) => {
+  e.preventDefault();
 
-      const handleEdit = () => {
-    setSubmitted(false);
-  };
+  const name = e.target.name.value;
+  const email = e.target.email.value;
+  const message = e.target.message.value;
+
+  // Pre-fill email details
+  const subject = encodeURIComponent("New Message from Contact Form");
+  const body = encodeURIComponent(
+    `Hello,\n\nYou have a new message:\n\nName: ${name}\nEmail: ${email}\nMessage: ${message}\n\nBest Regards,\n${name}`
+  );
+
+  // Replace with your email address
+  const mailtoLink = `mailto:yourmail@example.com?subject=${subject}&body=${body}`;
+
+  // Open user's mail app
+  window.location.href = mailtoLink;
+
+  setFormData({
+    name: "",
+    email: "",
+    message: "",
+  });
+  setSubmitted(true);
+};
+
+
+  
 
   return (
      <div id='about' className="bg-black text-white">
@@ -73,18 +82,18 @@ const Aboutus = () => {
           {/* Left: Contact Info */}
           <div>
             <h2 className="font-manuka text-7xl lg:text-9xl font-extrabold mb-6">Contact Us</h2>
-            <p className="text-lg mb-4 font-inter">
+            <p className="text-lg mb-4 font-neue">
               Have a question, idea, or just want to say hi?  
               We’d love to hear from you.  
             </p>
-            <p className="text-lg mb-2 flex justify-start items-center font-inter">
+            <p className="text-lg mb-2 flex justify-start items-center font-neue">
               <Mail/> &nbsp; {" "}
               <a href="mailto:Speak@jndhouse.in" className="underline">
                 Speak@jndhouse.in
 
               </a>
             </p>
-            <p className="text-lg flex justify-start items-center font-inter">
+            <p className="text-lg flex justify-start items-center font-neue">
               <Phone/> &nbsp; {" "}
               <a href="tel:+917709468348" className="underline">
                 7709468348
@@ -93,9 +102,10 @@ const Aboutus = () => {
           </div>
 
           {/* Right: Contact formData */}
-           <form
+           {/* <form
   action="https://formspree.io/f/xeozbbvo"
-  method="POST"
+  method="POST" */}
+  <form onSubmit={handleSubmit}
   className="
     relative flex flex-col gap-4
     p-6
@@ -164,9 +174,9 @@ const Aboutus = () => {
   {/* Submit Button */}
   <button
     type="submit"
-    className="
-      rounded-lg py-3 font-extrabold
-      text-black
+    className=" font-manuka
+      rounded-lg py-3 font-bold
+      text-black text-3xl
       bg-white hover:bg-white/50
       border border-white/20
       focus:outline-none focus:ring-2 focus:ring-white/40

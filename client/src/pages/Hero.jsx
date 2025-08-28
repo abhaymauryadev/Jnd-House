@@ -1,5 +1,4 @@
 import React, { useRef } from "react";
-import { CircleArrowRight, MapPin } from "lucide-react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 
@@ -16,8 +15,8 @@ const Hero = () => {
   });
 
   return (
-    <section id="home" className="max-w-9xl  m-auto bg-[#000000] border border-b-gray-500 ">
-      <div className=" py-8  h-[560px] sm:h-[720px] w-full ">
+    <section id="home" className="max-w-9xl  m-auto bg-[#000000] border border-b-white ">
+      <div className=" py-8  h-[600px] sm:h-[720px] w-full ">
         <div className="relative h-96 w-full  overflow-y-visible  ">
           <video
             src="https://cdn.prod.website-files.com/6646fca7f3a331476d338754%2F66839eada0e10752e419afc8_Isaac_Tour-transcode.mp4"
@@ -33,7 +32,7 @@ const Hero = () => {
             ref={hero}
             className="z-20 absolute top-[120px] sm:top-[90px] xl:top-[200px] inset-0 flex flex-col items-start justify-start pl-6 sm:pl-9 lg:gap-12">
           
-            <h1 className="font-inter pl-1 text-white text-xl sm:text-xl  lg:text-[17px]  ">
+            <h1 className="font-neue pl-1 text-white text-xl sm:text-xl  lg:text-[17px]  ">
               Just Anncounced
             </h1>
 

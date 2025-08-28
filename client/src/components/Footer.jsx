@@ -5,7 +5,7 @@ import { MoveUpRight } from "lucide-react";
 
 const Footer = () => {
   return  (
-<footer className="bg-black text-white px-7 sm:px-10 sm:20 py-12 mt-16">
+<footer className="bg-black text-white px-7 sm:px-10  py-12 mt-16">
   <div className="grid grid-cols-1 md:grid-cols-[70%_30%] gap-20">
 
     {/* <!-- Left Section (70%) --> */}
@@ -24,17 +24,15 @@ const Footer = () => {
 
       {/* <!-- Locations --> */}
      <p
-  className=" 
-    border-t border-gray-200  lg:pt-8 sm:pt-4 text-xl text-white
-    bg-clip-text 
+  className=" border-t  border-gray-200  lg:pt-8 sm:pt-4 text-xl text-white bg-clip-text 
     [mask-image:linear-gradient(to_right,black_90%,transparent)]
     [mask-repeat:no-repeat] [mask-size:100%_100%]
-  ">  Mumbai / Chennai / Uttar-Pradesh / Jammu / Assam </p>
-
+    ">  Mumbai / Chennai / Uttar-Pradesh / Jammu / Assam </p>
+      
       {/* <!-- Address --> */}
       <p
   className=" 
-    border-t border-gray-200  lg:pt-8 sm:pt-4 text-xl text-white
+    border-t border-gray-200  lg:pt-8 sm:pt-12 text-xl text-white
     bg-clip-text 
     [mask-image:linear-gradient(to_right,black_90%,transparent)]
     [mask-repeat:no-repeat] [mask-size:100%_100%]

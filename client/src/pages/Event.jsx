@@ -36,28 +36,32 @@ const Event = () => {
 
         {/* <div className='grid grid-cols-1 grid-rows-1 px-12 pr-8 pt-8 gap-6  sm:ml-2 sm:grid-cols-2 lg:grid-cols-3 '> */}
 
-      <div className='md:flex sm:lex-col xl:flex justify-between items-center mt-12 ml-3  gap-2 '>
-          <div className=''>
-              <img className='md:p-7 h-full w-[800px] object-cover' src={con} alt="COMING SOON" />
+      <div className='md:flex    sm:lex-col xl:flex justify-between items-center mt-12 ml-3  gap-2 '>
+          <div className='md:mt-12'>
+              <img className='md:p-7 h-full  w-[800px] object-cover md:h-[550px]' src={con} alt="COMING SOON" />
           </div>
 
 
-        <div className='text-white mt-12  sm:mx-auto xl:mx-auto lg:mt-0 text-center flex flex-col gap-12  h-[500px] xl:w-[500px] border border-gray-100 bg-gradient-to-br from-slate-900 via-indigo-950 to-black'>
+      <div className='text-white mt-12  sm:mx-auto xl:mx-auto lg:mt-12 text-center flex flex-col gap-12 h-[500px] xl:w-[500px] border border-gray-100 bg-gradient-to-br from-slate-900 via-indigo-950 to-black'>
             
-        <div className='font-manuka  text-center sm:pl-6 sm:text-5xl text-6xl mt-5 '>
-           Pineapple Express
-        </div>
+      <div className="relative font-manuka text-center sm:pl-6 sm:ml sm:text-5xl text-6xl mt-5 md:ml-9 lg:-ml-2 
+      bg-gradient-to-r from-white via-gray-300 to-white 
+      bg-[length:200%_100%] bg-clip-text text-transparent animate-shine"
+      >
+      Pineapple Express
+      </div>
 
-         <div className='flex  items-center lg:ml-15 pl-11  sm:pl-20 sm:text-xl  font-inter  text-2xl mt-2 '>
+         <div className='flex  items-center lg:ml-15 pl-14  sm:pl-20 sm:text-1xl  font-inter  text-[21.9px] mt-2 md:-ml-6 '>
          <MapPin/>&nbsp;LowerParel/Mumbai
         </div>
 
-        <div className='flex items-center text-center lg:ml-20 text-2xl ml-2 sm:pl-15 pl-10  font-inter  sm:text-xl  sm:ml-12 text-[20px]  '>
+        <div className='flex items-center text-center  lg:ml-20 text-2xl lg:pl-16  ml-14 sm:pl-15   font-inter  sm:text-xl  sm:ml-12 text-[20px] 
+         md:-ml-1 '>
           <Calendar/>&nbsp;GatesOpen<ArrowRight/>8:00PM
         </div>
 
-         <div className='flex font-inter items-center mx-auto mt-[30px] '>
-        <button className='font-Anton font-extrabold text-3xl lg:h-20 lg:w-70 h-20 w-60  border border-white  hover:border  hover:bg-white hover:text-black mt-[1.5rem] ml-auto transition-all duration-500 ease-in-out cursor-pointer'>
+         <div className='flex font-inter items-center mx-auto mt-[30px] lg:mr-22 '>
+        <button className='font-Anton font-bold text-3xl lg:h-20 lg:w-70 h-20 w-60  border border-white  hover:border  hover:bg-white hover:text-black mt-[1.5rem] ml-auto transition-all duration-500 ease-in-out cursor-pointer'>
         PRE BOOK
        </button>
         </div>

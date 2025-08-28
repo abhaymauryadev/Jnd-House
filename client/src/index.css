@@ -1,62 +1,60 @@
 @import "tailwindcss";
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-html{
-    behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
 
-::selection{
-    background-color: white;
-    color: black;
+::selection {
+  background-color: white;
+  color: black;
 }
 
 @theme {
-    --animate-marquee-x: marquee-x 80s linear infinite;
-    --animate-marquee-x-reverse: marquee-x-reverse 80s linear infinite;
-    --font-family-manuka: "Manuka", sans-serif;
-    --font-family-inter: "Inter", sans-serif;
-  
-    @keyframes marquee-x {
-      0% {
-        transform: translateX(0%);
-      }
-      100% {
-        transform: translateX(-50%);
-      }
-    }
-  
-    @keyframes marquee-x-reverse {
-      0% {
-        transform: translateX(-50%);
-      }
-      100% {
-        transform: translateX(0%);
-      }
-    }
+  --animate-marquee-x: marquee-x 80s linear infinite;
+  --animate-marquee-x-reverse: marquee-x-reverse 80s linear infinite;
+  --font-family-manuka: "Manuka", sans-serif;
+  --font-family-neue: "Neue", sans-serif;   /* renamed for clarity */
 
-  /*   shine animation */
-  @keyframes shine {
-    0% { transform: translateX(-100%); }
-    100% { transform: translateX(100%); }
+  @keyframes marquee-x {
+    0% {
+      transform: translateX(0%);
+    }
+    100% {
+      transform: translateX(-50%);
+    }
   }
-}  
-  
+
+  @keyframes marquee-x-reverse {
+    0% {
+      transform: translateX(-50%);
+    }
+    100% {
+      transform: translateX(0%);
+    }
+  }
+}
 
 @font-face {
-    font-family: "Manuka";
-    src: url("/CustomFonts/Manuka.otf") format("opentype");
-    font-weight: 900;
-    font-style: normal;
+  font-family: "Manuka";
+  src: url("/CustomFonts/Manuka.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
 }
 
-@utility font-manuka{    
-    font-family: var(--font-family-manuka);
-  
+@font-face {
+  font-family: "Neue";
+  src: url("/CustomFonts/NeueHassGroteskDisplay.otf") format("opentype");
+  font-style: normal;
 }
 
-@utility font-inter{    
-  font-family: var(--font-family-inter);
+@utility font-manuka {
+  font-family: var(--font-family-manuka);
+}
+
+@utility font-neue {
+  font-family: var(--font-family-neue);
 }

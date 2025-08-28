@@ -43,7 +43,7 @@ const Aboutus = () => {
      <div id='about' className="bg-black text-white">
       {/* About Us Section */}
       <section className="px-6 py-12 md:px-12 lg:px-24 border-b border-gray-800">
-        <div className="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 sm:gap-[400px] items-center">
+        <div className="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 sm:gap-[400px] md:gap-[100px] items-center  ">
           {/* Image */}
           <div className="flex justify-start -ml-12">
             <img
@@ -55,12 +55,12 @@ const Aboutus = () => {
 
           {/* Story */}
           <div>
-            <h2 className=" font-manuka text-7xl lg:text-9xl font-extrabold mb-6">About Us</h2>
-            <p className="font-inter text-lg leading-relaxed mb-4">
-             JnD House Curating Culture. Creating Connections. 
+            <h2 className=" font-manuka text-7xl lg:text-9xl font-extrabold mb-6 tracking-tight">About Us</h2>
+            <p className="font-neue lg:text-lg leading-relaxed mb-4">
+             JnD - House Curating Culture. Creating Connections. 
 
             </p>
-            <p className="font-inter  text-lg leading-relaxed">
+            <p className="font-neue text-lg leading-relaxed max-w-3xl">
               Mumbai’s curated canvas for culture, creativity, and connection. From electrifying concerts to inspiring talks and exclusive art showcases — we craft immersive experiences where sophistication meets bold innovation. Join us to witness the extraordinary unfold.
             </p>
           </div>
@@ -68,8 +68,8 @@ const Aboutus = () => {
       </section>
 
       {/* Contact Us Section */}
-      <section id='contact' className="px-6 py-12 md:px-12 lg:px-">
-        <div className="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 sm:gap-[400px] items-center ">
+      <section id='contact' className="px-6 py-12 md:px-12 lg:">
+        <div className="max-w-9xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-24 sm:gap-[400px]  md:gap-[100px] items-center ">
           {/* Left: Contact Info */}
           <div>
             <h2 className="font-manuka text-7xl lg:text-9xl font-extrabold mb-6">Contact Us</h2>

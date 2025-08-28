@@ -8,12 +8,12 @@ const Navbar = () => {
   const [isHovered, setIsHovered] = useState(false);
 
   return (
-    <nav className="relative font-manuka leading-[68px] sm:flex justify-between items-center bg-black px-7 py-2 z-10">
+    <nav className="relative font-manuka leading-[68px] sm:flex justify-between items-center bg-black px-7 py-2 z-10 ">
 
     {/* menu button */}
     <button onClick={() => setIsOpen(!isOpen)} className="lg:hidden pt-3 z-20 text-white">
       {/* Container to position icons on top of each other */}
-      <div className="relative h-8 w-8 top:1.5 ">
+      <div className="relative h-8 w-8 top-1.5  ">
         <MenuIcon
           className={`absolute transition-all duration-300 ${isOpen ? 'opacity-0 rotate-90' : 'opacity-100 rotate-0'}`}
           size={40} color="white" />
@@ -26,7 +26,7 @@ const Navbar = () => {
 
     {/* Mobile Hamburger */}
     {isOpen && (
-      <div className =" bg-black min-h-screen min-w-screen lg:hidden flex justify-center items-start p-7 transition-all duration-500 ease-in-out">
+      <div className =" bg-black min-h-screen min-w-screen lg:hidden flex justify-center items-start p-7 -ml-2 transition-all duration-500 ease-in-out">
         <div className="flex flex-col gap-7 text-[4.25rem] text-white font-black  ">
         <a href="#home" onClick={() => setIsOpen(false)} onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="">
           HOME
@@ -49,7 +49,7 @@ const Navbar = () => {
       {/* Desktop Links */}
       <div className=" mt-1 gap-20 hidden lg:flex justify-end items-end text-white text-[4.25rem]  leading-[68px] pl-3 ">
         <a href="#home" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="">
-          TOUR
+          HOME
         </a>
         <a href="#tour" onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)} className="">
           EVENT

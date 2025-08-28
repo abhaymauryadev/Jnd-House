@@ -43,19 +43,19 @@ const Hero = () => {
               </h1>
             </div>
 
-            <div className="  font-black  font-manuka inset-0 gap-5 sm:gap-15 mt-[200px] z-50 flex flex-wrap-reverse  items-center justify-start bg-black/55 w-full h-[50px]  lg:h-[111px] md:h-[100px] lg:font-[4.25rem] lg:-mt-[12px] ">
+            <div className="  font-black  font-manuka inset-0 gap-5 sm:gap-15 mt-[200px] z-50 flex flex-wrap-reverse  items-center justify-start bg-black/60 w-full h-[50px]  lg:h-[111px] md:h-[100px] lg:font-[4.25rem] lg:-mt-[12px] ">
               <button className="text-4xl sm:text-9xl  md:text-2xl xl:text-7xl px-5 flex justify-center items-center bg-white h-full lg:h-[110px] lg:w-[320px] hover:border border-white hover:bg-black hover:text-white  transition-all duration-500 ease-in-out cursor-pointer">
                 BOOK NOW
               </button>
-              <div className="font-manuka flex text-[25px] items-center gap-10 sm:gap-15 md:gap-20">
-                <h1 className=" md:text-2xl text-white uppercase xl:text-[4.25rem]">
+              <div className="font-manuka flex text-[23px]  items-center gap-5 sm:gap-15 md:gap-20">
+                <h1 className=" md:text-1xl text-white uppercase xl:text-[4.25rem]">
                   1 OCt 2025
                 </h1>
-                <h1 className="font-manuka  md:text-2xl text-white xl:text-[4.25rem] flex  justify-center items-center gap-4">
-                  <CircleArrowRight size={60}/> 30 OCT 2025
+                <h1 className="font-manuka   md:text-2xl text-white xl:text-[4.25rem] flex  justify-center items-center gap-4">
+                  <CircleArrowRight size={40}/>30 OCT 2025
                 </h1>
                 <h1 className="font-manuka md:text-2xl text-white xl:text-[4.25rem] flex  justify-center items-center gap-2">
-                  <MapPin size={60} /> MH/UP
+                  <MapPin size={40} />MH/UP
                 </h1>
               </div>
             </div>

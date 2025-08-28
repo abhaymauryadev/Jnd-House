@@ -12,7 +12,7 @@ const Footer = () => {
     <div className="space-y-10">
       {/* <!-- Social Icons --> */}
       <div className="flex space-x-4 ">
-        <a href="https://www.instagram.com/jndhouse/"  target="_blank" rel="noopener noreferrer" className="w-20 h-20 ml-33 lg:ml-0 flex items-center justify-center border border-white bg-white ">
+        <a href="https://www.instagram.com/jndhouse/"  target="_blank" rel="noopener noreferrer" className="w-20 h-20 ml-27 lg:ml-0 flex items-center justify-center border border-white bg-white ">
          <FaInstagram   size={32} fill=""  />
         </a>
         {/* <a href="#" target="_blank"  rel="noopener noreferrer" className="w-20 h-20 flex items-center justify-center border bg-white  border-white">
@@ -31,9 +31,13 @@ const Footer = () => {
       </p>
 
       {/* <!-- Copyright --> */}
-      <p className="border-t border-gray-700 pt-4 text-xl flex justify-start items-center">
-        Powered by<img src="https://www.unsquare.in/images/Un-removebg-preview.png" alt="logo" className="h-[60px] w-[120px]" />  
-      </p>
+     <p className="border-t border-gray-700 pt-4 text-xl flex justify-start items-center gap-2">
+      Powered by 
+        <a href="https://www.unsquare.in" target="_blank"  rel="noopener noreferrer" className="ml-2 flex items-center hover:opacity-80">
+
+    <img src="https://www.unsquare.in/images/Un-removebg-preview.png" alt="Unsquare logo" className="h-[60px] w-[120px]"  />
+  </a>
+</p>
     </div>
 {/* 
     <!-- Right Section --> */}

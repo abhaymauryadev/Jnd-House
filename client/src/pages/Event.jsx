@@ -1,7 +1,8 @@
 import { Calendar, ArrowRight, MapPin  } from 'lucide-react'
 import React, { useRef } from 'react'
 import gsap from "gsap";
-import con from '../assets/nightcon.png'
+// import con from '../assets/nightcon.png'
+import con from '../assets/cs.jpg'
 import { useGSAP } from "@gsap/react";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 gsap.registerPlugin(ScrollTrigger);
@@ -47,16 +48,16 @@ const Event = () => {
            Pineapple Express
         </div>
 
-         <div className=' flex  items-center lg:ml-15 pl-10  sm:pl-20 sm:text-xl  font-inter  text-2xl mt-2 gap-3'>
-         <MapPin/> LowerParel/Mumbai
+         <div className='flex  items-center lg:ml-15 pl-11  sm:pl-20 sm:text-xl  font-inter  text-2xl mt-2 '>
+         <MapPin/>&nbsp;LowerParel/Mumbai
         </div>
 
-        <div className='flex items-center text-center lg:ml-20 text-2xl ml-2 sm:pl-15 pl-10  font-inter  sm:text-xl  sm:ml-12 text-[20px] md:gap-3 '>
-          <Calendar />&nbsp;GatesOpen<ArrowRight/> 8:00PM
+        <div className='flex items-center text-center lg:ml-20 text-2xl ml-2 sm:pl-15 pl-10  font-inter  sm:text-xl  sm:ml-12 text-[20px]  '>
+          <Calendar/>&nbsp;GatesOpen<ArrowRight/>8:00PM
         </div>
 
-         <div className='flex font-inter items-center mx-auto mt-[70px] '>
-        <button className='font-Anton font-extrabold text-3xl lg:h-20 lg:w-70 mb-8 h-20 w-60  border border-white  hover:border  hover:bg-white hover:text-black mt-[1.5rem] ml-auto transition-all duration-500 ease-in-out cursor-pointer'>
+         <div className='flex font-inter items-center mx-auto mt-[30px] '>
+        <button className='font-Anton font-extrabold text-3xl lg:h-20 lg:w-70 h-20 w-60  border border-white  hover:border  hover:bg-white hover:text-black mt-[1.5rem] ml-auto transition-all duration-500 ease-in-out cursor-pointer'>
         PRE BOOK
        </button>
         </div>

@@ -166,13 +166,14 @@ const Aboutus = () => {
     type="submit"
     className="
       rounded-lg py-3 font-extrabold
-      text-white
-      bg-white/20 hover:bg-white/30
+      text-black
+      bg-white hover:bg-white/50
       border border-white/20
       focus:outline-none focus:ring-2 focus:ring-white/40
       transition
       shadow-lg
       backdrop-blur
+      hover:text-white
     "
   >
     Send Message
